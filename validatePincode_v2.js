@@ -6,7 +6,7 @@ const rl = readline.createInterface({
 });
 
 function validatePinCode(pinCode) {
-    const pinCodeRegex = /^[1-9][0-9]{2}\s?[0-9]{3}$/; // Allows optional space in middle
+    const pinCodeRegex = /^[1-9][0-9]{2}\s\s?[0-9]{3}$/; // Allows optional space in middle
     return pinCodeRegex.test(pinCode);
 }
 
